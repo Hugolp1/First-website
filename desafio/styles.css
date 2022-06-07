@@ -1,0 +1,384 @@
+:root {
+  --cor-texto: #667085;
+  --vermelho-texto: #8E2424;
+  --preto-texto: #101828;
+}
+
+.header {
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 100vh;
+}
+
+.body {
+  background-color: #FFFFFF;
+}
+.cabecalho {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 84%;
+  height: 55%;
+  margin: 18px 80px;
+  padding: 0 32px;
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  order: 0;
+}
+
+.logo__texto {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  color: #3A404E;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.paginas {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+  order: 1;
+}
+
+.paginas__lista {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+}
+
+.paginas__lista--link {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  gap: 8px;
+}
+
+.paginas__lista--link a {
+  text-decoration: none;
+  color: var(--cor-texto);
+}
+
+.espacamento {
+  display: flex;
+  width: 142px;
+  height: 32px;
+  order: 2;
+}
+
+.botoes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  order: 3;
+}
+
+.botoes--link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 18px;
+  gap: 8px;
+  font-family: 'Inter', sans-serif;
+  text-decoration: none;
+  color: var(--cor-texto);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 8px;
+}
+
+.cadastrar {
+  box-sizing: border-box;
+  background: var(--vermelho-texto);
+  border: 1px solid var(--vermelho-texto);
+  border-radius: 8px;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  color: #FFFFFF;
+}
+
+.sobre {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.titulo {
+  color: var(--vermelho-texto);
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.subtitulo {
+  color: var(--preto-texto);
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  margin: 24px 0 36px 0;
+}
+
+.caixa {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 12px 0px 0px;
+  width: 55%;
+}
+
+.descricao {
+  color: var(--cor-texto);
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.metricas {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 96px 0;
+  gap: 64px;
+}
+
+.caixa__metricas {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 32px;
+  margin: 0 112px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  flex-grow: 0;
+  align-self: stretch;
+  width: 25%;
+}
+
+.numero {
+  font-size: 60px;
+  line-height: 72px;
+}
+
+.subtitulo__metricas {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  margin: 20px 0 8px 0;
+}
+
+.descricao__metricas {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.talentos {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.titulo__talentos {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: rgba(142, 36, 36, 0.05);
+  padding: 4px 12px;
+  border-radius: 16px;
+}
+
+.subtitulo__talentos {
+  font-size: 36px;
+  line-height: 44px;
+  margin: 20px 0 20px 0;
+}
+
+.caixa__talentos {
+  align-items: center;
+  margin-bottom: 64px;
+}
+
+.vagas {
+  width: 100%;
+}
+
+.caixa__vagas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 32px;
+  gap: 32px;
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 44px;
+}
+
+.titulo__vagas {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--preto-texto);
+  align-self: flex-start;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px 24px 28px;
+  gap: 24px;
+  box-sizing: border-box;
+  border: 1px solid #EAECF0;
+  border-radius: 16px;
+  width: 100%;
+}
+
+.titulo__caixa {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--preto-texto);
+}
+
+.descricao__vagas {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+}
+
+.descricao__caixa {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--cor-texto);
+}
+
+.caixa__design {
+  margin-top: 0;
+}
+
+.depoimentos {
+  width: 78%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px;
+  gap: 12px;
+  background-color: rgba(142, 36, 36, 0.05);
+  margin: auto;
+  margin-top: 96px;
+  border-radius: 16px;
+}
+
+.titulo__depoimentos {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.subtitulo__depoimentos {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+}
+
+.nome {
+  color: var(--preto-texto);
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.trabalho {
+  color: var(--cor-texto);
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.formulario {
+  background-color: #F9FAFB;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 32px;
+  padding-bottom: 96px;
+  gap: 12px;
+  margin-top: 96px;
+}
+
+.subtitulo__formulario {
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  font-weight: 600;
+  order: 0;
+  margin-bottom: 20px;
+}
+
+.descricao__formulario {
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  order: 1;
+}
+
+.direitos {
+  font-family: 'Inter', sans-serif;
+  color: var(--cor-texto);
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  order: 3;
+}
+
+.email {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--cor-texto);
+  padding: 12px 14px 12px 16px;
+  border: 1px solid #D0D5DD;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px; 
+}
+
+.botoes__formulario {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 16px;
+  order: 2;
+  margin: 20px 0 32px;
+}
